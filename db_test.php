@@ -6,5 +6,6 @@
   	echo '接続成功！';
   	mysqli_set_charset($link, "utf8");
   	echo '文字コードは'.mysqli_character_set_name($link).'です。';
+  	mysqli_close($link);
   }
  ?>
